@@ -53,6 +53,10 @@ void vendor_load_properties()
         /* coreprimeve3gxx */
         property_set("ro.product.model", "SM-G361H");
         property_set("ro.product.device", "coreprimeve3g");
+    } else if (strstr(bootloader, "J110H")) {
+        /* j1pop3g */
+        property_set("ro.product.model", "SM-J110H");
+        property_set("ro.product.device", "j1pop3g");    
     } else if (strstr(bootloader, "G531BT")) {
         /* grandprimeve3gdtv */
         property_set("ro.product.model", "SM-G531BT");
